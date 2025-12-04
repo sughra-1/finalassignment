@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Bonz.ai  Future of Hospitality</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+      
+        <img src="assets/logo/bonz.ai-logo-color-landscape.png" alt="heade-icon" width="100">
+      
+      <nav class="site-header__nav" id="main-nav" aria-label="Main">
+        <ul class="site-header__nav-list">
+          <li><a href="index.html" class="site-header__nav-link1" style="color: black;">Home</a></li>
+          <li><a href="secondpage.html" class="site-header__nav-link2" style="color: green;">Booking</a></li>
+          <li><a href="thirdpage.html" class="site-header__nav-link3">About</a></li>
+        </ul>
+        <a href="#booking" class="nav-btn">Book your stay</a>
+      </nav>
+
+  </header>
+
+  <main id="top">
+    <section class="booking" id="booking">
+      <div class="container booking__container">
+        <!-- Booking heading -->
+        <header class="booking__header">
+          <h1 class="booking__title">Book Your Stay</h1>
+          <p class="booking__subtitle">
+            Discover sustainable luxury powered by AI technology
+          </p>
+        </header>
+
+        <!-- Search bar -->
+      <form class="booking__form" aria-label="Search available rooms">
+        <fieldset class="booking__field">
+          <label for="checkin" class="booking__label">Check-in</label>
+          <input id="checkin" type="date" class="booking__input" />
+        </fieldset>
+
+        <fieldset class="booking__field">
+          <label for="checkout" class="booking__label">Check-out</label>
+          <input id="checkout" type="date" class="booking__input" />
+        </fieldset>
+
+        <fieldset class="booking__field">
+          <label for="guests" class="booking__label">Guests</label>
+          <select id="guests" class="booking__field--input">
+            <option>2 Guests</option>
+            <option>1 Guest</option>
+            <option>3 Guests</option>
+            <option>4 Guests</option>
+            <option>5+ Guests</option>
+          </select>
+        </fieldset>
+
+        <fieldset class="booking__field">
+          <label for="room-type" class="booking__label">Room Type</label>
+          <select id="room-type" class="booking__field--input">
+            <option>All Rooms</option>
+            <option>Suite</option>
+            <option>Studio</option>
+            <option>Loft</option>
+          </select>
+        </fieldset>
+
+        <button class="booking__submit" type="submit">Book now</button>
+      </form>
+
+      <!-- ROOMS SECTION  -->
+      <section class="rooms">
+        <header class="rooms__header">
+          <h2 class="rooms__title">6 Rooms Available</h2>
+          <p class="rooms__subtitle">Select dates to see availability</p>
+        </header>
+
+        <ul class="rooms__list">
+          <!-- Room 1 -->
+          <li class="rooms__item">
+            <article class="room">
+              <figure class="room__media  room__media--1">
+                <p class="room__rating">4.9 ★</p>
+                
+              </figure>
+
+              <section class="room__body">
+                <header class="room__header">
+                  <div class="room__title-wrap">
+                    <h3 class="room__name">EcoSmart Suite</h3>
+                    <figure class="room__photo">
+                    <img src="assets/logo/lucide/users-round.png" alt="" class="room__photo--icon" />
+                    <p class="room__photo--text">Up to 2   45 m²</p>
+                  </figure>
+                  </div>
+                  <p class="room__price">
+                    <span class="room__price--unit">$299</span>
+                    <span class="room__price--night">per night</span>
+                  </p>
+                  
+                </header>
+
+                <p class="room__features">
+                  <img src="assets/logo/lucide-2/lucide-4/wifi.png" alt="" class="room__features--icon" />
+                  <span class="room__features--heading">Features</span>
+                  
+                </p>
+
+                <p class="room__facilities--text">
+                  <span class="room__facility">King size bed</span>
+                  <span class="room__facility">Ocean View</span>
+                  <span class="room__facility">Smart Climate</span>
+                  <span class="room__facility">Premium Toiletries</span>
+                </p>
+
+               
+
+                <p class="room__aifeatures">
+                  <img src="assets/logo/lucide-5/brain.png" alt="" class="room__aifeatures--icon" />
+                  <span class="room__aifeatures--heading">AI Features</span>
+                  
+                </p>
+
+                <p class="room__tags">
+                  <span class="room__tag--button">Voice Control</span>
+                  <span class="room__tag--button">Smart Lighting</span>
+                  <span class="room__tag--button">Digital Concierge</span>
+                </p>
+
+                <p class="room__sustainability">
+                  <img src="assets/logo/lucide-2/lucide-3/leaf.png" alt="" class="room__sustainability--icon" />
+                  <span class="room__sustainability--heading">Sustainability</span>
+                  
+                </p>
+
+                <p class="room__tags">
+                  100% renewable energy, recycled materials
+                </p>
+
+                <footer class="room__footer">
+                  <button class="room__btn" type="button">Reserve Room</button>
+                </footer>
+              </section>
+            </article>
+          </li>
+
+          <!-- Room 2 -->
+
+          <li class="rooms__item">
+            <article class="room">
+
+          <section class="room__body">
+            <header class="room__header">
+              <div class="room__title-wrap">
+                <h3 class="room__name">GreenTech Deluxe</h3>
+                <figure class="room__photo">
+                <img src="assets/logo/lucide/users-round.png" alt="" class="room__photo--icon" />
+                <p class="room__photo--text">Up to 2   35 m²</p>
+              </figure>
+              </div>
+              <p class="room__price">
+                <span class="room__price--unit">$199</span>
+                <span class="room__price--night">per night</span>
+              </p>
+              
+            </header>
+
+            <p class="room__features">
+              <img src="assets/logo/lucide-2/lucide-4/wifi.png" alt="" class="room__features--icon" />
+              <span class="room__features--heading">Features</span>
+              
+            </p>
+
+            <p class="room__facilities--text">
+              <span class="room__facility">Queen size bed</span>
+              <span class="room__facility">City View</span>
+              <span class="room__facility">Smart TV</span>
+              <span class="room__facility">Premium Toiletries</span>
+            </p>
+
+           
+
+            <p class="room__aifeatures">
+              <img src="assets/logo/lucide-5/brain.png" alt="" class="room__aifeatures--icon" />
+              <span class="room__aifeatures--heading">AI Features</span>
+              
+            </p>
+
+            <p class="room__tags">
+              <span class="room__tag--button">Voice Control</span>
+              <span class="room__tag--button">Smart Lighting</span>
+              <span class="room__tag--button">Predictive Climate</span>
+            </p>
+
+            <p class="room__sustainability">
+              <img src="assets/logo/lucide-2/lucide-3/leaf.png" alt="" class="room__sustainability--icon" />
+              <span class="room__sustainability--heading">Sustainability</span>
+              
+            </p>
+
+            <p class="room__tags">
+              Solar powered, low-flow water systems
+            </p>
+
+            <footer class="room__footer">
+              <button class="room__btn" type="button">Reserve Room</button>
+            </footer>
+          </section>
+
+          <figure class="room__media  room__media--2">
+            <p class="room__rating">4.9 ★</p>
+            
+          </figure>
+        </article>
+      </li>
+
+          <!-- Room 3 -->
+
+          <li class="rooms__item">
+            <article class="room">
+              <figure class="room__media  room__media--3">
+                <p class="room__rating">4.2 ★</p>
+                
+              </figure>
+
+              <section class="room__body">
+                <header class="room__header">
+                  <div class="room__title-wrap">
+                    <h3 class="room__name">Sustainable Studio</h3>
+                    <figure class="room__photo">
+                    <img src="assets/logo/lucide/users-round.png" alt="" class="room__photo--icon" />
+                    <p class="room__photo--text">Up to 2   25 m²</p>
+                  </figure>
+                  </div>
+                  <p class="room__price">
+                    <span class="room__price--unit">$149</span>
+                    <span class="room__price--night">per night</span>
+                  </p>
+                  
+                </header>
+
+                <p class="room__features">
+                  <img src="assets/logo/lucide-2/lucide-4/wifi.png" alt="" class="room__features--icon" />
+                  <span class="room__features--heading">Features</span>
+                  
+                </p>
+
+                <p class="room__facilities--text">
+                  <span class="room__facility">Double bed</span>
+                  <span class="room__facility">Garden View</span>
+                  <span class="room__facility">Eco-Friendly Bath</span>
+                  
+                </p>
+
+               
+
+                <p class="room__aifeatures">
+                  <img src="assets/logo/lucide-5/brain.png" alt="" class="room__aifeatures--icon" />
+                  <span class="room__aifeatures--heading">AI Features</span>
+                  
+                </p>
+
+                <p class="room__tags">
+                  <span class="room__tag--button">Smart Lighting</span>
+                  <span class="room__tag--button">Digital Concierge</span>
+                  
+                </p>
+
+                <p class="room__sustainability">
+                  <img src="assets/logo/lucide-2/lucide-3/leaf.png" alt="" class="room__sustainability--icon" />
+                  <span class="room__sustainability--heading">Sustainability</span>
+                  
+                </p>
+
+                <p class="room__tags">
+                  Bamboo furniture, organic linens
+                </p>
+
+                <footer class="room__footer">
+                  <button class="room__btn" type="button">Reserve Room</button>
+                </footer>
+              </section>
+            </article>
+          </li>
+          
+
+          <!-- Room 4 -->
+
+          <li class="rooms__item">
+            <article class="room">
+
+          <section class="room__body">
+            <header class="room__header">
+              <div class="room__title-wrap">
+                <h3 class="room__name">Nature's Haven</h3>
+                <figure class="room__photo">
+                <img src="assets/logo/lucide/users-round.png" alt="" class="room__photo--icon" />
+                <p class="room__photo--text">Up to 3   40 m²</p>
+              </figure>
+              </div>
+              <p class="room__price">
+                <span class="room__price--unit">$229</span>
+                <span class="room__price--night">per night</span>
+              </p>
+              
+            </header>
+
+            <p class="room__features">
+              <img src="assets/logo/lucide-2/lucide-4/wifi.png" alt="" class="room__features--icon" />
+              <span class="room__features--heading">Features</span>
+              
+            </p>
+
+            <p class="room__facilities--text">
+              <span class="room__facility">King size bed</span>
+              <span class="room__facility">Forest View</span>
+              <span class="room__facility">Balcony</span>
+              <span class="room__facility">Air Pirifier</span>
+            </p>
+
+           
+
+            <p class="room__aifeatures">
+              <img src="assets/logo/lucide-5/brain.png" alt="" class="room__aifeatures--icon" />
+              <span class="room__aifeatures--heading">AI Features</span>
+              
+            </p>
+
+            <p class="room__tags">
+              <span class="room__tag--button">Voice Control</span>
+              <span class="room__tag--button">Smart Lighting</span>
+              <span class="room__tag--button">Wellness Monitoring</span>
+            </p>
+
+            <p class="room__sustainability">
+              <img src="assets/logo/lucide-2/lucide-3/leaf.png" alt="" class="room__sustainability--icon" />
+              <span class="room__sustainability--heading">Sustainability</span>
+              
+            </p>
+
+            <p class="room__tags">
+              Living plant walls, carbon-negative
+            </p>
+
+            <footer class="room__footer">
+              <button class="room__btn" type="button">Reserve Room</button>
+            </footer>
+          </section>
+
+          <figure class="room__media  room__media--4">
+            <p class="room__rating">4.6 ★</p>
+            
+          </figure>
+        </article>
+      </li>
+          
+
+           <!-- Room 5 -->
+
+           <li class="rooms__item">
+            <article class="room">
+              <figure class="room__media  room__media--5">
+                <p class="room__rating">4.9 ★</p>
+                
+              </figure>
+
+              <section class="room__body">
+                <header class="room__header">
+                  <div class="room__title-wrap">
+                    <h3 class="room__name">AI Presidential Suite</h3>
+                    <figure class="room__photo">
+                    <img src="assets/logo/lucide/users-round.png" alt="" class="room__photo--icon" />
+                    <p class="room__photo--text">Up to 4   80 m²</p>
+                  </figure>
+                  </div>
+                  <p class="room__price">
+                    <span class="room__price--unit">$499</span>
+                    <span class="room__price--night">per night</span>
+                  </p>
+                  
+                </header>
+
+                <p class="room__features">
+                  <img src="assets/logo/lucide-2/lucide-4/wifi.png" alt="" class="room__features--icon" />
+                  <span class="room__features--heading">Features</span>
+                  
+                </p>
+
+                <p class="room__facilities--text">
+                  <span class="room__facility">2 King size bed</span>
+                  <span class="room__facility">Panoramic View</span>
+                  <span class="room__facility">Private Terrace</span>
+                  <span class="room__facility">Luxury Bath</span>
+                </p>
+
+               
+
+                <p class="room__aifeatures">
+                  <img src="assets/logo/lucide-5/brain.png" alt="" class="room__aifeatures--icon" />
+                  <span class="room__aifeatures--heading">AI Features</span>
+                  
+                </p>
+
+                <p class="room__tags">
+                  <span class="room__tag--button">Full AI Suite</span>
+                  <span class="room__tag--button">Predictive Service</span>
+                  <span class="room__tag--button">Holographic Display</span>
+                </p>
+
+                <p class="room__sustainability">
+                  <img src="assets/logo/lucide-2/lucide-3/leaf.png" alt="" class="room__sustainability--icon" />
+                  <span class="room__sustainability--heading">Sustainability</span>
+                  
+                </p>
+
+                <p class="room__tags">
+                  Net-zero carbon, rainwater harvesting
+                </p>
+
+                <footer class="room__footer">
+                  <button class="room__btn" type="button">Reserve Room</button>
+                </footer>
+              </section>
+            </article>
+          </li>
+
+            <!-- Room 6 -->
+
+            <li class="rooms__item">
+              <article class="room">
+  
+            <section class="room__body">
+              <header class="room__header">
+                <div class="room__title-wrap">
+                  <h3 class="room__name">Urban EcoLoft</h3>
+                  <figure class="room__photo">
+                  <img src="assets/logo/lucide/users-round.png" alt="" class="room__photo--icon" />
+                  <p class="room__photo--text">Up to 2   30 m²</p>
+                </figure>
+                </div>
+                <p class="room__price">
+                  <span class="room__price--unit">$179</span>
+                  <span class="room__price--night">per night</span>
+                </p>
+                
+              </header>
+  
+              <p class="room__features">
+                <img src="assets/logo/lucide-2/lucide-4/wifi.png" alt="" class="room__features--icon" />
+                <span class="room__features--heading">Features</span>
+                
+              </p>
+  
+              <p class="room__facilities--text">
+                <span class="room__facility">Queen size bed</span>
+                <span class="room__facility">High Ceiling</span>
+                <span class="room__facility">Natural Light</span>
+                
+              </p>
+  
+             
+  
+              <p class="room__aifeatures">
+                <img src="assets/logo/lucide-5/brain.png" alt="" class="room__aifeatures--icon" />
+                <span class="room__aifeatures--heading">AI Features</span>
+                
+              </p>
+  
+              <p class="room__tags">
+                
+                <span class="room__tag--button">Smart Lighting</span>
+                <span class="room__tag--button">Digital Concierge</span>
+              </p>
+  
+              <p class="room__sustainability">
+                <img src="assets/logo/lucide-2/lucide-3/leaf.png" alt="" class="room__sustainability--icon" />
+                <span class="room__sustainability--heading">Sustainability</span>
+                
+              </p>
+  
+              <p class="room__tags">
+                Upcycled furniture, zero waste
+              </p>
+  
+              <footer class="room__footer">
+                <button class="room__btn" type="button">Reserve Room</button>
+              </footer>
+            </section>
+  
+            <figure class="room__media  room__media--6">
+              <p class="room__rating">4.9 ★</p>
+              
+            </figure>
+          </article>
+ 
+        </ul>
+      </section>
+    </div>
+  </section>
+</main>
+
+<!-- FOOTER -->
+<footer class="site-footer">
+    <div class="container site-footer__inner">
+      <section class="site-footer__col">
+        <div class="site-footer__logo">
+          <img src="assets/logo/bonz.ai-logo-color-portrait-full.png" alt="heade-icon" width="100">
+        </div>
+        <p class="site-footer__small">
+          The hotel where sustainable, accessible, and deeply connected hospitality comes alive
+          through intelligent systems.
+        </p>
+      </section>
+
+      <section class="site-footer__col" aria-label="Contact information">
+        <h3 class="site-footer__heading">Contact</h3>
+        <p class="site-footer__text">
+          123 Green Street<br />
+          Eco City, EC 12345
+        </p>
+        <p class="site-footer__text">
+          +1 (555) 123-4567<br />
+          hello@bonz.ai
+        </p>
+      </section>
+
+      <nav class="site-footer__col" aria-label="Quick links">
+        <h3 class="site-footer__heading">Quick Links</h3>
+        <ul class="site-footer__links">
+          <li><a href="#top">Privacy Policy</a></li>
+          <li><a href="#top">Terms of Service</a></li>
+          <li><a href="#sustainability-title">Sustainability Report</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <section class="site-footer__bottom">
+      <p class="site-footer__small">
+        © 2025 Bonz.ai. All rights reserved. Building a sustainable future, one stay at a time.
+      </p>
+    </section>
+  </footer>
+
+</body>
+</html>
