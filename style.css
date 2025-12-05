@@ -9,7 +9,7 @@
   }
   body {               
     margin: 0;
-    padding-top:14rem ; /*NEW*/
+    padding-top:14rem ; 
   }
   
   html, body {
@@ -72,15 +72,24 @@
         flex-direction: column;
         gap: 2rem;
         flex-wrap: wrap;
+        font-size: 1.5rem;
+        font-weight: 300;
       }
       
       .site-header__nav-link1 {
         font-size: 0.95rem;
         color: green;
+        font-size: 1.5rem;
+        font-weight: 300;
       }
       
-      .site-header__nav-link:hover {
+      .site-header__nav-link1:hover,
+      .site-header__nav-link2:hover,
+      .site-header__nav-link3:hover {
         text-decoration: underline;
+        background: #cfede7;
+        box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
+        transform: translateY(-1px);
       }
    
       img {
@@ -102,22 +111,29 @@
    }
    
    .nav-btn {
-     background: #00b894;
-     color: white;
-     border: 1px solid #00b894;
+     background:#00896a;
+     color: #ffffff;
+     border: 1px solid #00896a;
      box-shadow: none;
-     border-radius: 5px;
+     border-radius: 10px;
      margin-right: 3rem;
-     padding: 0.5rem;
+     padding: 0.3rem 1rem;
      width: 100%;
      text-align: center;
      margin-right: 5rem;              
      width: 100%;  
+     font-size: 1.5rem;
+     font-weight: 400;
      
    }
 
+   .nav-btn:hover {
+    background: #00a581;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
+    transform: translateY(-1px);
+   }
+
    @media (min-width: 375px) and (max-width: 1000px) {
-    /* header-höjd ≈ 96px → vi ger main lite extra luft */
     .booking-page {
       padding-top: 96px;
     }
@@ -134,18 +150,18 @@
     }
   
     .nav-links {
-      display: none;              /* göm meny-länkar om du vill ha ren mobilvy */
+      display: none;              
     }
   
     .nav-btn {
       align-self: center;
       width: 70%;
-      text-align: center;         /* knappen centreras horisontellt */
+      text-align: center;         
       margin: 0 auto;
     }
   
     .booking-hero {
-      padding-top: 32px;          /* texten börjar fint under headern */
+      padding-top: 32px;          
     }
   
     .booking-hero h1 {
@@ -159,12 +175,12 @@
 
   @media (min-width: 1000px) {
     .booking-page {
-      padding-top: 88px;          /* lagom för desktop-nav-höjd */
+      padding-top: 88px;         
     }
   
     .navbar {
       flex-direction: row;
-      align-items: center;        /* centrerar knappen vertikalt i nav-baren */
+      align-items: center;        
       padding: 16px 24px;
     }
   
@@ -198,7 +214,7 @@
 @media (min-width: 768px) {
 
   body {
-    padding-top: 5.5rem;      /* NEW: mindre offset när headern är låg på desktop */
+    padding-top: 5.5rem;      
   }
   .site-header {
     flex-direction: row;       
@@ -242,6 +258,7 @@
     @media (max-width: 576px) {
     .hero {
       padding-top: 2rem;
+      
    }
      }   
    
@@ -250,27 +267,32 @@
      inset: 0;
      background: linear-gradient(
        to bottom,
-       rgba(5, 14, 20, 0.75),
-       rgba(5, 14, 20, 0.9)
+       rgba(0, 0, 0, 0.5),
+       rgba(0, 0, 0, 0.7)
      );
+     
    }
    
    .hero__content {
      position: relative;
      padding: 4.5rem 0 3rem;
      text-align: center;
+     
    }
    
    .hero__title {
-    font-size: 2.7rem;
-     margin-bottom: 0.7rem;
+    font-size: 4rem;
+    font-size: normal;
+    margin-bottom: 0.7rem;
+    font-weight: 400;
+    
    }
 
    .hero__text {
     margin: 0 auto 1.6rem;
-    max-width: 360px;
-    font-size: 0.98rem;
-    color: #e1f5ff;
+    max-width: 920px;
+    font-size: 1.5rem;
+    
 
    }
    
@@ -287,13 +309,13 @@
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    padding: 0.75rem 1.8rem;
+    padding: 0.75rem 1rem;
     border-radius: 8px;
     border: none;
-    background: #00c29a;
-    color: #fff;
-    font-weight: 600;
-    font-size: 0.95rem;
+    background: #00896a;
+    color: #ffffff;
+    font-weight: 400;
+    font-size: 1.5rem;
     cursor: pointer;
     text-decoration: none;
    
@@ -301,7 +323,7 @@
   }
 
    .btn--hero {
-    background: transparent;
+    background: #1e293b;
     border: 1px solid rgba(255, 255, 255, 0.6);
     color: #fff;
     box-shadow: none;
@@ -351,9 +373,10 @@
    }
    
    .section-title {
-    font-size: 1.8rem;
+    font-size: 2rem;
     margin: 0 0 0.4rem;
     text-align: center;
+    font-weight: 500;
   }
   
   .section-text {
@@ -376,7 +399,7 @@
    
    .card-title {
     font-size:1.15rem;
-    font-weight:600;
+    font-weight:400 !important;
     margin-bottom:0.6rem;
    }
    
@@ -463,10 +486,11 @@
    
    .sustained-stats__value {
      margin: 0 0 0.15rem;
-     font-weight: 700;
-     color: #00b894;
-     font-size: 1.1rem;
+     font-weight: 600;
+     color: #006a4e !important;
+     font-size: 1.5rem;
      margin-top: 1rem;
+     
    }
    
    .sustained-stats__label {
@@ -500,11 +524,11 @@
       }
 
     .btn.btn--outline {
-      background: #1ba562;
+      background: #00896a;
       border: none;
       color: #fff;
-      font-weight: 600;
-      padding: 0.9rem 1.9rem;
+      font-weight: 400;
+      padding: 0.5rem;
       border-radius: 8px;
       margin-top: 1.5rem;
       width: fit-content;          
@@ -558,9 +582,10 @@
     text-align: left; 
    }
    .section3-title {
-    font-size: 2.3rem;
+    font-size: 2.5rem;
     margin: 0 0 1.2rem;
-    text-align: left;  
+    text-align: left; 
+    font-weight: 400; 
    }
    
    /* ===================
@@ -581,8 +606,9 @@
    
    .cta__title {
      margin: 0 0 0.7rem;
-     font-size: 1.9rem;
+     font-size: 2.2rem;
      text-align: center;
+     font-weight: 400;
    }
    
    .cta__text {
@@ -625,7 +651,7 @@
    .site-footer__small {
      font-size: 0.78rem;
      color: #a3b3c1;
-     max-width: 600px;
+     
    }
    
    .site-footer__text {
@@ -782,10 +808,10 @@
 .booking__submit {
   border: none;
   border-radius: 10px;
-  padding: 0.7rem 1rem;
-  font-size: 0.9rem;
-  font-weight: 600;
-  background: #00b894;
+  padding: 0.2rem 1rem;
+  font-size: 1.5rem;
+  font-weight: 400;
+  background: #00896a;
   color: #fff;
   cursor: pointer;
   transition: transform 0.1s ease, box-shadow 0.15s ease, background 0.15s ease;
@@ -805,7 +831,7 @@
   }
 
   .booking__submit {
-    height: 70%;
+    height: 45%;
     padding-inline: 1.8rem;
   }
 }
@@ -1031,21 +1057,31 @@
   .room__btn {
     border: none;
     border-radius: 9px;
-    padding: 1rem 12rem;
-    font-size: 0.85rem;
-    font-weight: 600;
-    background: #059669;
+    padding: 0.8rem 3rem;
+    font-size: 1.5rem;
+    font-weight: 400;
+    background: #00896a;
     color: #ffffff;
     cursor: pointer;
     transition: background 0.15s ease, transform 0.1s ease, box-shadow 0.15s ease;
+
+    display: inline-block;
+    margin: 1.5rem auto 0;
   }
   
   .room__btn:hover {
-    background: #047857;
+    background: #00a581;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
     transform: translateY(-1px);
-    box-shadow: 0 8px 18px rgba(4, 120, 87, 0.25);
   }
   
+  @media (min-width: 375px) and (max-width: 576px) {
+    .room__btn {
+      display: inline-block;
+      margin: 1.5rem auto 0;
+      width: auto;
+    }
+  }
   /* Desktop layout – image left, content right */
   
   @media (min-width: 768px) {
@@ -1087,7 +1123,7 @@
 
 .thirdpage-hero__content {
   position: relative;
-  padding: 4rem 0 3rem;
+  padding: 1.5rem 0;
   text-align: center;
 }
 
@@ -1139,6 +1175,7 @@
   background: #e2faee;
   padding: 1.5rem 0 2rem;
   text-align: center;
+ 
 }
 
 .thirdpage-tabs__group {
@@ -1148,8 +1185,25 @@
   border-radius: 999px;
   padding: 0.5rem;
   
-  
 }
+
+@media (min-width: 375px) and (max-width: 576px) {
+  .thirdpage-tabs__group {
+    display: flex;                      /* block-level flex */
+    width: 100%;                        /* fill the screen width */
+    max-width: 100%;
+    justify-content: space-between;
+    gap: 1.5rem; 
+  }
+
+  .thirdpage-tabs__btn {
+    flex: 1 1 0;                        /* let the 3 buttons share space */
+    min-width: 0;
+    padding-inline: 0.5rem;             /* slightly tighter padding */
+    font-size: 0.9rem;                  /* optional, to help it fit */
+  }
+}
+
 
 .thirdpage-tabs__btn {
   border: none;
@@ -1213,7 +1267,7 @@
 }
 .ab-amenities__media {
   margin: 0;
-  aspect-ratio: 4 / 3;      /* 🔥 same height for all images */
+  aspect-ratio: 4 / 3;      
   overflow: hidden;
 }
 
@@ -1310,6 +1364,9 @@
     padding: 6px 12px;
     font-size: 12px;
   }
+
+  html, body {
+    overflow-x: visible;}
 
   /*.hero-content {
     padding-top: 80px;   
